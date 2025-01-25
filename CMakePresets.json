@@ -1,0 +1,49 @@
+{
+	"version": 6,
+	"configurePresets": [
+		{
+			"name": "linux/x86_64/debug",
+			"displayName": "Linux - x86_64 - Debug",
+			"generator": "Ninja",
+			"binaryDir": ".build/linux/x86_64/debug",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug",
+				"CMAKE_CXX_FLAGS_INIT": "-Wall -Wextra -Wno-unused-command-line-argument -O0",
+				"CMAKE_TOOLCHAIN_FILE": ".cmake/platform/linux-x86_64.cmake"
+			}
+		},
+		{
+			"name": "linux/x86_64/release",
+			"displayName": "Linux - x86_64 - Release",
+			"generator": "Ninja",
+			"binaryDir": ".build/linux/x86_64/release",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release",
+				"CMAKE_CXX_FLAGS_INIT": "-Wall -Wextra -Wno-unused-command-line-argument -O3",
+				"CMAKE_TOOLCHAIN_FILE": ".cmake/platform/linux-x86_64.cmake"
+			}
+		},
+		{
+			"name": "web/debug",
+			"displayName": "Web - Debug",
+			"generator": "Ninja",
+			"binaryDir": ".build/web/debug",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug",
+				"CMAKE_CXX_FLAGS_INIT": "-Wall -Wextra -Wno-unused-command-line-argument -O0",
+				"CMAKE_TOOLCHAIN_FILE": ".cmake/platform/web-wasm32.cmake"
+			}
+		},
+		{
+			"name": "web/release",
+			"displayName": "Web - Release",
+			"generator": "Ninja",
+			"binaryDir": ".build/web/release",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release",
+				"CMAKE_CXX_FLAGS_INIT": "-Wall -Wextra -Wno-unused-command-line-argument -O3",
+				"CMAKE_TOOLCHAIN_FILE": ".cmake/platform/web-wasm32.cmake"
+			}
+		}
+	]
+}
