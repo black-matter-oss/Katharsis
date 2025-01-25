@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+
+# Nix
+.nix/
+.profile/
+.nix-profile/
+
+# Clangd
+.cache/
+
+# IDEs
+.idea/
+.vscode/
+.kdev4/
+
+# Godot 4+ specific ignores
+.godot/
+/godot
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# for projects that use SCons for building: http://http://www.scons.org/
+.sconsign.dblite
+
+# When configure fails, SCons outputs these
+config.log
+.sconf_temp
+
+# Build stuff
+/.build
+*.o
